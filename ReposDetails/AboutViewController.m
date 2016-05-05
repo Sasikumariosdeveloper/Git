@@ -8,6 +8,7 @@
 
 #import "AboutViewController.h"
 #import "HomeViewController.h"
+#import "ViewController.h"
 @interface AboutViewController ()
 @property (strong, nonatomic) IBOutlet UIImageView *GitHubUserImage;
 @property (strong, nonatomic) IBOutlet UILabel *GitHubUserName;
@@ -48,6 +49,10 @@
 
 - (IBAction)backAbout:(id)sender {
     HomeViewController* controller = [self.storyboard instantiateViewControllerWithIdentifier:@"HomeViewController"];
+    [self presentModalViewController:controller animated:YES];
+}
+- (IBAction)Logout:(id)sender {
+    ViewController* controller = [self.storyboard instantiateViewControllerWithIdentifier:@"ViewController"];
     [self presentModalViewController:controller animated:YES];
 }
 

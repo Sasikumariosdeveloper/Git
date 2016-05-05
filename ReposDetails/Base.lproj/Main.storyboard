@@ -9,7 +9,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -234,15 +234,28 @@
                                                     <action selector="backAbout:" destination="UAo-pf-Qld" eventType="touchUpInside" id="4rc-md-0PZ"/>
                                                 </connections>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fFS-el-slE">
+                                                <rect key="frame" x="535" y="23" width="48" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="r4y-E9-w0d"/>
+                                                    <constraint firstAttribute="width" constant="48" id="xCQ-MO-MLV"/>
+                                                </constraints>
+                                                <state key="normal" title="Logout"/>
+                                                <connections>
+                                                    <action selector="Logout:" destination="UAo-pf-Qld" eventType="touchUpInside" id="ew8-g2-ozr"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.92549019610000005" green="0.94117647059999998" blue="0.94509803920000002" alpha="1" colorSpace="deviceRGB"/>
                                         <constraints>
                                             <constraint firstItem="k06-hH-rgO" firstAttribute="top" secondItem="EYo-Yd-kz5" secondAttribute="bottom" constant="4" id="KCg-mV-SO0"/>
                                             <constraint firstItem="EYo-Yd-kz5" firstAttribute="top" secondItem="g9u-3A-ryC" secondAttribute="top" constant="23" id="VKQ-sG-BFO"/>
+                                            <constraint firstItem="fFS-el-slE" firstAttribute="top" secondItem="g9u-3A-ryC" secondAttribute="top" constant="23" id="Z1g-QO-TqP"/>
                                             <constraint firstAttribute="height" constant="218" id="jFe-9S-xMD"/>
                                             <constraint firstItem="EYo-Yd-kz5" firstAttribute="centerX" secondItem="g9u-3A-ryC" secondAttribute="centerX" id="jsb-rq-eIT"/>
                                             <constraint firstAttribute="bottom" secondItem="k06-hH-rgO" secondAttribute="bottom" constant="12" id="sIl-vO-JqN"/>
                                             <constraint firstItem="k06-hH-rgO" firstAttribute="centerX" secondItem="EYo-Yd-kz5" secondAttribute="centerX" id="wvH-gh-LaC"/>
+                                            <constraint firstAttribute="trailing" secondItem="fFS-el-slE" secondAttribute="trailing" constant="17" id="yLU-hp-Obg"/>
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eif-QS-Zpl">
